@@ -54,9 +54,6 @@ def main():
             "VRDeck": vr_deck
         }])
 
-        st.write(data)
-        st.write(data.dtypes)
-
         prediction = model.predict(data)[0]
         
         if prediction == 1:
