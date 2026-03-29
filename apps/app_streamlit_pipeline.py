@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+import sklearn
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = BASE_DIR / "artifacts" / "pipeline_model.pkl"
