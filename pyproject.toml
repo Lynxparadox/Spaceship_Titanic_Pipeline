@@ -3,12 +3,9 @@ name = "spaceship_titanic_pipeline"
 version = "0.1.0"
 
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools==69.5.1", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 package-dir = {"" = "."}
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["spaceship_titanic_pipeline"]
+packages = ["spaceship_titanic_pipeline"]
