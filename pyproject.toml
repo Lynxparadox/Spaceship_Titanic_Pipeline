@@ -1,12 +1,10 @@
 [project]
 name = "spaceship_titanic_pipeline"
 version = "0.1.0"
-requires-python = ">=3.10"
 
 [build-system]
-requires = ["setuptools>=68.0", "wheel"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["source*", "models*"]
