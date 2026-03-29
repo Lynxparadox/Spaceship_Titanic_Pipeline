@@ -4,10 +4,15 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 import sys
-import sklearn
 
-#st.write("Python version:", sys.version)
-st.write("Scikit-learn version:", sklearn.__version__)
+st.write("Python version:", sys.version)
+
+try:
+    import sklearn
+    st.write("Scikit-learn version:", sklearn.__version__)
+except Exception as e:
+    st.write("Scikit-learn not installed")
+    st.write(e)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = BASE_DIR / "artifacts" / "pipeline_model.pkl"
