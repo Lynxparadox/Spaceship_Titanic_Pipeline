@@ -18,7 +18,7 @@ def train_model():
     "HomePlanet","CryoSleep","CabinDeck","CabinNum",
     "CabinSide","Destination","Age","VIP",
     "RoomService","FoodCourt","ShoppingMall","Spa","VRDeck"
-]
+    ]
 
     X = df[feature_columns]
     y = df["Transported"].astype(int)
