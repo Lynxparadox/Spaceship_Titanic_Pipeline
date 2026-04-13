@@ -2,7 +2,7 @@ from pathlib import Path
 import pickle
 
 from sklearn.linear_model import LogisticRegression
-from src.features.pre_processing import preprocess
+from spaceship_titanic_pipeline.features.pre_processing import preprocess
 
 BASE_DIR = Path(__file__).resolve().parent
 ARTIFACT_DIR = BASE_DIR / "artifacts"
