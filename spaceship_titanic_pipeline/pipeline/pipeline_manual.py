@@ -1,6 +1,6 @@
-from src.data.data_ingestion import ingest_data 
-from src.features.preprocessing import preprocess 
-from src.models.train_model import train_model 
+from spaceship_titanic_pipeline.data.data_ingestion import ingest_data 
+from spaceship_titanic_pipeline.features.preprocessing import preprocess 
+from spaceship_titanic_pipeline.models.train_model import train_model 
 from evaluation import evaluate 
 
 def run_pipeline_manual(): 
