@@ -1,5 +1,5 @@
-from src.data.loader_data import load_data
-from src.models.train_model import train_model
+from spaceship_titanic_pipeline.data.loader_data import load_data
+from spaceship_titanic_pipeline.models.train_model import train_model
 
 def run_pipeline():
      
